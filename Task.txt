@@ -1,0 +1,122 @@
+Question 1 
+Explore and explain the various methods in console function
+Explain them
+Ex. console.log()
+console.warn().
+etc...
+Answer :-  
+for eg-
+console.log('Welcome to JavaScript');
+-> Outputs a Welcome to JavaScript (message) to the console.
+
+console.warn("Welcome to JavaScript");
+-> Outputs a warning Welcome to JavaScript (message) to the console.
+
+console.group(); 
+->Creates a new inline group in the console. This indents following console
+ messages by an additional level, until console.groupEnd() is called
+
+
+
+
+
+---------------------------------
+
+Question 2 
+Write the difference between var, let and const with code examples.
+Answer :-
+Var -
+The JavaScript variables statement is used to declare a variable and, optionally, we can initialize the value of that variable.
+
+Example: var a =10;
+
+Variable declarations are processed before the execution of the code.
+The scope of a JavaScript variable declared with var is its current execution context.
+The scope of a JavaScript variable declared outside the function is global.
+eg-
+function nodeSimplified(){
+  var a =10;
+  console.log(a);  // output 10
+  if(true){
+   var a=20;
+   console.log(a); // output 20
+  }
+  console.log(a);  // output 20
+}
+------------------------
+Let
+The let statement declares a local variable in a block scope. It is similar to var, in that we can optionally initialize the variable.
+
+Example: let a =10;
+
+The let statement allows you to create a variable with the scope limited to the block on which it is used.
+It is similar to the variable we declare in other languages like Java, .NET, etc.
+Consider the following code snippet.
+eg-
+function nodeSimplified(){
+  let a =10;
+  console.log(a);  // output 10
+  if(true){
+   let a=20;
+   console.log(a); // output 20
+  }
+  console.log(a);  // output 10
+}
+
+---------------------------
+Const
+const statement values can be assigned once and they cannot be 
+reassigned. The scope of const statement works similar to let 
+statements.
+
+eg:
+ const a =10;
+
+function nodeSimplified(){
+  const MY_VARIABLE =10;
+  console.log(MY_VARIABLE);  //output 10 
+}
+
+
+
+
+------------------------------
+
+
+Question 3 
+Write a brief intro on available data types in Javascript.
+Answer :-
+There are 8 basic data types in JavaScript.
+
+number for numbers of any kind: integer or floating-point, integers are limited by ±253.
+bigint is for integer numbers of arbitrary length.
+string for strings. A string may have zero or more characters, there’s no separate single-character type.
+boolean for true/false.
+null for unknown values – a standalone type that has a single value null.
+undefined for unassigned values – a standalone type that has a single value undefined.
+object for more complex data structures.
+symbol for unique identifiers.
+
+
+
+
+
+------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
